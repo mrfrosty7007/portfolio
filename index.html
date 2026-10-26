@@ -323,7 +323,7 @@ var body=t+"\n\n--\n"+n+"\n"+m;
 $("gs").textContent="Opening your email app. If nothing happens, use Copy email and write to me directly.";
 window.location.href="mailto:"+EM+"?subject="+encodeURIComponent("Portfolio message from "+n)+"&body="+encodeURIComponent(body);});
 /* nav */
-var S=[["experience","Experience","02"],["projects","Projects","04"],["skills","Hard Skills",String(nSk)],["education","Education","01"],["certifications","Certifications","05"],["achievements","Achievements","03"],["contact","Get in touch",""]];
+var S=[["experience","Experience","02"],["projects","Projects","04"],["skills","Hard Skills",String(nSk)],["education","Education","01"],["certifications","Certifications","04"],["achievements","Achievements","03"],["contact","Get in touch",""]];
 $("nav").innerHTML=S.map(function(s){return "<a href='#"+s[0]+"' data-s='"+s[0]+"'><svg viewBox='0 0 24 24'>"+IC[s[0]==="contact"?"contact":s[0]]+"</svg><em style='font-style:normal'>"+s[1]+"</em><span>"+s[2]+"</span></a>";}).join("");
 $("mnav").innerHTML=S.map(function(s){return "<a href='#"+s[0]+"' data-s='"+s[0]+"'>"+s[1]+"</a>";}).join("");
 function go(e){var a=e.target.closest("a[data-s]");if(!a)return;e.preventDefault();if(a.getAttribute("data-s")==="contact"){openC();return;}$(a.getAttribute("data-s")).scrollIntoView({block:"start"});}
