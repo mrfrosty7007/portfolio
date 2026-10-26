@@ -106,6 +106,9 @@ section{margin-top:84px}
 .cg small{display:block;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
 .cg a{text-underline-offset:3px}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);margin-right:8px}
+.credential-proof{margin-top:12px}
+.credential-proof a{display:inline-flex;align-items:center;gap:10px;color:var(--mute);font-size:13px;text-decoration:none}
+.credential-proof img{display:block;width:112px;height:74px;object-fit:cover;border:1px solid var(--line);border-radius:9px;background:var(--card)}
 .end{text-align:center;color:var(--mute);margin:84px 0 0;font-size:18px}
 
 dialog.gt{border:1px solid var(--line);background:var(--side);color:var(--ink);border-radius:28px;padding:34px 32px 32px;width:min(560px,calc(100% - 28px));max-height:calc(100% - 28px);overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.55)}
@@ -238,11 +241,18 @@ main,body.slim main{margin:0;padding:22px 20px 64px}
   <section id="education"><div class="sec"><span class="lbl">Education</span><small>2025 – 2029</small></div>
     <dl class="rows"><dt>Degree</dt><dd><b>SRM Institute of Science and Technology</b><br><span class="serif">B.Tech in Computer Science and Engineering</span><br><small style="color:var(--mute)">Chennai, India</small></dd>
     <dt>Languages</dt><dd>English (Professional), Hindi (Fluent), Malayalam (Native), Tamil (Conversational)</dd></dl></section>
-  <section id="certifications"><div class="sec"><span class="lbl">Certifications</span><small>01 listed</small></div>
-    <dl class="rows"><dt>Sep 2026 – Mar 2027</dt><dd><b>AI/ML Internship Offer — AI Developer</b><br><span>Blue Planet Info Solutions Pvt. Ltd.</span><br><small style="color:var(--mute)">Offer letter listed under Licenses &amp; certifications</small></dd></dl></section>
-  <section id="achievements"><div class="sec"><span class="lbl">Achievements</span><small>02 awards</small></div>
+  <section id="certifications"><div class="sec"><span class="lbl">Certifications</span><small>05 entries</small></div>
+    <dl class="rows">
+      <dt>Sep 2026 – Mar 2027</dt><dd><b>AI/ML Internship Offer — AI Developer</b><br><span>Blue Planet Info Solutions Pvt. Ltd.</span><br><small style="color:var(--mute)">Offer letter · Remote, part-time internship</small></dd>
+      <dt>Sep 2026</dt><dd><b>Award of Excellence — Code Merge Hackathon v2.0 (3rd Place)</b><br><span>SRM IST · Dept. of Data Science and Business Systems</span><div class="credential-proof"><a href="assets/code-merge-third-place.png" target="_blank" rel="noopener"><img src="assets/code-merge-third-place.png" alt="Code Merge Hackathon v2.0 third-place certificate" loading="lazy">View certificate</a></div></dd>
+      <dt>Feb 2026</dt><dd><b>INGENIA 1.0 — Certificate of Achievement (2nd Place)</b><br><span>Team COSMOS · SRM IST</span><div class="credential-proof"><a href="assets/ingenia-1-0-second-place.png" target="_blank" rel="noopener"><img src="assets/ingenia-1-0-second-place.png" alt="INGENIA 1.0 second-place certificate" loading="lazy">View certificate</a></div></dd>
+      <dt>Nov 2025</dt><dd><b>Winner — Reuse and Remodel Products Competition (1st Place)</b><br><span>Dept. of Mechanical Engineering · SRM IST</span><div class="credential-proof"><a href="assets/reuse-remodel-first-place.png" target="_blank" rel="noopener"><img src="assets/reuse-remodel-first-place.png" alt="Reuse and Remodel Products first-place certificate" loading="lazy">View certificate</a></div></dd>
+      <dt>Sep 2025</dt><dd><b>Smart India Hackathon 2025</b><br><span>SRM Institute of Science and Technology</span></dd>
+    </dl></section>
+  <section id="achievements"><div class="sec"><span class="lbl">Achievements</span><small>03 awards</small></div>
     <dl class="rows"><dt>Sept 2026</dt><dd><b>3rd place, Code Merge Hackathon v2.0</b><br><span class="serif">AI for Impact, for INTERLOCK</span><br><small style="color:var(--mute)">Organized by Dept. of DSBS, SRM IST</small></dd>
-    <dt>Feb 2025</dt><dd><b>2nd place, INGENIA 1.0</b><br><span class="serif">With Team COSMOS</span><br><small style="color:var(--mute)">Organized by Directorate of Career Centre &amp; Dept. of DSBS, SRM IST</small></dd></dl></section>
+    <dt>Feb 2026</dt><dd><b>2nd place, INGENIA 1.0</b><br><span class="serif">With Team COSMOS</span><br><small style="color:var(--mute)">Organized by Directorate of Career Centre &amp; Dept. of DSBS, SRM IST</small></dd>
+    <dt>Nov 2025</dt><dd><b>1st place, Reuse and Remodel Products Competition</b><br><span class="serif">Basic Civil and Mechanical Workshop Laboratory (21MES101L)</span><br><small style="color:var(--mute)">Organized by Dept. of Mechanical Engineering, SRM IST</small></dd></dl></section>
   <section id="contact"><div class="sec"><span class="lbl">Contact</span><small>Let’s connect</small></div>
     <div class="cg">
       <div><small>Email</small>mahadevankallat@gmail.com<br><button class="copy" id="copy">Copy email</button></div>
@@ -314,7 +324,7 @@ var body=t+"\n\n--\n"+n+"\n"+m;
 $("gs").textContent="Opening your email app. If nothing happens, use Copy email and write to me directly.";
 window.location.href="mailto:"+EM+"?subject="+encodeURIComponent("Portfolio message from "+n)+"&body="+encodeURIComponent(body);});
 /* nav */
-var S=[["experience","Experience","02"],["projects","Projects","04"],["skills","Hard Skills",String(nSk)],["education","Education","01"],["certifications","Certifications","01"],["achievements","Achievements","02"],["contact","Get in touch",""]];
+var S=[["experience","Experience","02"],["projects","Projects","04"],["skills","Hard Skills",String(nSk)],["education","Education","01"],["certifications","Certifications","05"],["achievements","Achievements","03"],["contact","Get in touch",""]];
 $("nav").innerHTML=S.map(function(s){return "<a href='#"+s[0]+"' data-s='"+s[0]+"'><svg viewBox='0 0 24 24'>"+IC[s[0]==="contact"?"contact":s[0]]+"</svg><em style='font-style:normal'>"+s[1]+"</em><span>"+s[2]+"</span></a>";}).join("");
 $("mnav").innerHTML=S.map(function(s){return "<a href='#"+s[0]+"' data-s='"+s[0]+"'>"+s[1]+"</a>";}).join("");
 function go(e){var a=e.target.closest("a[data-s]");if(!a)return;e.preventDefault();if(a.getAttribute("data-s")==="contact"){openC();return;}$(a.getAttribute("data-s")).scrollIntoView({block:"start"});}
